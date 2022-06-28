@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卓不凡</title>
+    <!--以下三个为boostrap前置文件-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/bootmain.css">
+    <script src="./js/time.js"></script>
+</head>
+<style type="text/css">
+
+</style>
+
+<body>
+    <!--顶部左侧logo 右侧按钮-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./img/headrlogo.png" height="100px" width="200px">
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline" style="margin-top: 35px;">
+                    <li><a href="login.html" class="btn btn-primary">登录</a></li>
+                    <li><a href="register.html" class="btn btn-primary">注册</a></li>
+                    <li><a href="#" class="btn btn-danger">购物车</a></li>
+                    <li><a href="#" class="btn btn-success">收藏页面</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--        导航条               -->
+    <nav class="navbar navbar-inverse">
+        <!--页面布局居中带空格-->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">卓不凡</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">生鲜水果<span class="sr-only">(current)</span></a></li>
+                    <li><a href="./pages/hj.html">环境展示</a></li>
+                    <li><a href="./pages/cp.html">产品中心</a></li>
+                    <li><a href="#">同城配送</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">更多<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">支付方式</a></li>
+                            <li><a href="#">招商加盟</a></li>
+                            <li><a href="#">客服中心</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">联系电话：13781441167</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">查找</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!--悬浮回顶部-->
+    <div class="float-nav-exp" >
+        <div class="nav-menu" style="background-color: #7FD1AE;">
+            <div title="返回顶部" class="item backup"><a href="#top" style="color: rgb(0, 0, 0);">
+                    <div class="item-icon"><svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                  d="M11.8214 0.626818C12.2046 0.272889 12.7954 0.27289 13.1786 0.626819L17.1175 4.26545C17.786 4.88302 17.3491 6 16.4389 6H8.56107C7.65094 6 7.21398 4.88302 7.88252 4.26545L11.8214 0.626818Z">
+                            </path>
+                        </svg></div>
+                    <div class="item-text">顶部</div>
+                </a></div>
+        </div>
+    </div>
+    <!---轮播图-->
+    <div class="fbody">
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3500">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <!--轮播图1-->
+                    <div class="item active">
+                        <img src="./img/pic1.jpg" height="800px" width="100%" alt="">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <!--轮播图2-->
+                    <div class="item">
+                        <img src="./img/pic2.jpg" height="800px" width="100%" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <!--轮播图3-->
+                    <div class="item">
+                        <img src="./img/pic3.jpg" height="800px" width="100%" alt="">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+                <!--左侧切换按钮-->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <!--右侧切换按钮-->
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div><img src="./img/dg.png" class="img-responsive center-block">
+        </div>
+    </div>
+    <!--主页内容-->
+    <div class="ybody">
+        <div class="container">
+            <img src="./img/slsg1.png" class="img-responsive center-block">
+        </div>
+        <div class="container" style="background-image: url(./img/slsg3.png); width: 1405px; height: 635px;">
+            <div class="slsg-tab">
+                <div class="row">
+                    <div class="col-xs-7"></div>
+                    <!-- Nav tabs -->
+                    <div class="col-xs-5">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                   data-toggle="tab">精品礼盒</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                   data-toggle="tab">进口水果</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                   data-toggle="tab">时令生鲜</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                   data-toggle="tab">深夜食堂</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab panes -->
+            <div class="slsg-body">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="row">
+                            <!--精品礼盒-->
+                            <div class="col-xs-3" style="text-align: right; padding-top: 60px;">
+                                <h1 style="color:aliceblue;">精品礼盒</h1>
+                                <p style="color: aliceblue;font-size: 10px;padding-top: 68px;">送礼送健康，精选生鲜礼盒</p>
+
+                            </div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-8">
+                                <div class="boxx">
+                                    <div class="smallbo">
+                                        <a href="./pages/hmg.html"><img src="./img/hmg.png" width="190px" height="185px">
+                                            <h3>卓不凡 哈密瓜</h4>
+                                                <p class="conten">哈密瓜新疆现摘 现发 新鲜水果原产地发货一整箱</p>
+                                                <p class="price">$139.9</p>
+                                                <p class="xl">销量584</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo">
+                                        <a href="./pages/fq.html"><img src="./img/sng.jpg" width="190px" height="185px">
+                                            <h3>卓不凡 小番茄</h4>
+                                                <p class="conten">新鲜水果圣女果小西红柿整箱西红柿3斤圣女果</p>
+                                                <p class="price">$139.9</p>
+                                                <p class="xl">销量584</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo">
+                                        <a href="./pages/cm.html"><img src="./img/cm.jpg" width="190px" height="185px">
+                                            <h3>卓不凡奶油草莓</h4>
+                                                <p class="conten">红颜奶油草莓
+                                                    重1.5kg 空运直达 3斤优选大果 单果30-40g</p>
+                                                <p class="price">$109</p>
+                                                <p class="xl">销量999+</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo">
+                                        <a href="./pages/mg.html"><img src="./img/mg.jpg" width="190px" height="185px">
+                                            <h3>卓不凡 芒果</h4>
+                                                <p class="conten">正宗金煌芒现摘现发香甜多汁整箱装 带箱5斤</p>
+                                                <p class="price">$69.9</p>
+                                                <p class="xl">销量978</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--进口水果-->
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="row">
+                            <div class="col-xs-3" style="text-align: right; padding-top: 60px;">
+                                <h1 style="color:aliceblue;">进口水果</h1>
+                                <p style="color: aliceblue;font-size: 10px;padding-top: 68px;">足不出户吃遍全球美味，尽享品质生活</p>
+
+                            </div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-8">
+                                <div class="boxx">
+                                    <div class="smallbo"><a href="./pages/lw.html"><img src="./img/lw.jpg" width="190px"
+                                                 height="185px">
+                                            <h3>泰国 金刚莲雾</h4>
+                                                <p class="conten">水果特级大果新鲜水果礼盒莲雾2斤装中果～</p>
+                                                <p class="price">$78</p>
+                                                <p class="xl">销量978</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/nyg.html"><img src="./img/nyg.jpg"
+                                                 width="190px" height="185px">
+                                            <h3>墨西哥 牛油果</h4>
+                                                <p class="conten">酸甜多汁．富含叶酸內散发清香240-280克</p>
+                                                <p class="price">$35.9</p>
+                                                <p class="xl">销量268</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/pty.html"><img src="./img/pty.jpg"
+                                                 width="190px" height="185px">
+                                            <h3>刚果 葡萄柚</h4>
+                                                <p class="conten">应当季水果送礼精选6个装单果约100-140g</p>
+                                                <p class="price">$35.9</p>
+                                                <p class="xl">销量268</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/sz.html"><img src="./img/sz.jpg" width="190px"
+                                                 height="185px">
+                                            <h3>泰国 山竹</h4>
+                                                <p class="conten">麻竹热带新鲜山竹水果生鲜孕妇水果精选5斤装</p>
+                                                <p class="price">$128</p>
+                                                <p class="xl">销量482</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--时令生鲜-->
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <div class="row">
+                            <div class="col-xs-3" style="text-align: right; padding-top: 60px;">
+                                <h1 style="color:aliceblue;">时令生鲜</h1>
+                                <p style="color: aliceblue;font-size: 10px;padding-top: 68px;">尝到新鲜的水果，吸收健康的营养</p>
+
+                            </div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-8">
+                                <div class="boxx">
+                                    <div class="smallbo"><a href="./pages/mg.html"><img src="./img/big4.png"
+                                                 width="190px" height="185px">
+                                            <h3>卓不凡 木瓜</h4>
+                                                <p class="conten">新鲜现摘生木瓜番木瓜 产妇下奶腌酸沙拉可选1/3/5/8斤</p>
+                                                <p class="price">$35.9</p>
+                                                <p class="xl">销量868</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/sl.html"><img src="./img/big6.png"
+                                                 width="190px" height="185px">
+                                            <h3>卓不凡 石榴</h4>
+                                                <p class="conten">软籽石榴大果新鲜孕妇水果整箱pk四川会理</p>
+                                                <p class="price">$236</p>
+                                                <p class="xl">销量468</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/fsl.html"><img src="./img/big8.png"
+                                                 width="190px" height="185px">
+                                            <h3>卓不凡 番石榴</h4>
+                                                <p class="conten">红心芭乐番石榴 时令香甜孕妇新鲜水果 5斤 10斤</p>
+                                                <p class="price">$235</p>
+                                                <p class="xl">销量768</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/fl.html"><img src="./img/fl.png" width="190px"
+                                                 height="185px">
+                                            <h3>卓不凡 凤梨</h4>
+                                                <p class="conten">海南金钻凤梨新鲜当季生鲜水果香水大菠萝手撕脆甜波萝4个装 2个装</p>
+                                                <p class="price">$65.8</p>
+                                                <p class="xl">销量684</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--深夜食堂-->
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <div class="row">
+                            <div class="col-xs-3" style="text-align: right; padding-top: 60px;">
+                                <h1 style="color:aliceblue;">深夜食堂</h1>
+                                <p style="color: aliceblue;font-size: 10px;padding-top: 68px;">食物无限时，想吃就吃，夜晚不孤单</p>
+
+                            </div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-8">
+                                <div class="boxx">
+                                    <div class="smallbo"><a href="./pages/dc.html"><img src="./img/cmdc.png"
+                                                 width="190px" height="185px">
+                                            <h3>代餐奶昔</h4>
+                                                <p class="conten">草莓芒果代餐奶昔12 24瓶成箱代餐</p>
+                                                <p class="price">$198</p>
+                                                <p class="xl">销量432</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/dc.html"><img src="./img/sn.png" width="190px"
+                                                 height="185px">
+                                            <h3>内蒙古 酸奶</h4>
+                                                <p class="conten">内蒙古特产2斤大桶装原味炭烧俄罗斯风味早餐儿童水果捞纯熟酸奶</p>
+                                                <p class="price">$58</p>
+                                                <p class="xl">销量243</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/jg.html"><img src="./img/jg.png" width="190px"
+                                                 height="185px">
+                                            <h3>卓不凡每日坚果</h4>
+                                                <p class="conten">净重500g
+                                                    混合坚果大礼包休闲零食运费小孩干果</p>
+                                                <p class="price">$29.8</p>
+                                                <p class="xl">销量732</p>
+                                        </a>
+                                    </div>
+                                    <div class="smallbo"><a href="./pages/mgg.html"><img src="./img/mgg.png"
+                                                 width="190px" height="185px">
+                                            <h3>卓不凡 芒果干</h4>
+                                                <p class="conten">蜜饯果干红杏干水果干蔓越莓干零食 芒果干106g</p>
+                                                <p class="price">$14.9</p>
+                                                <p class="xl">销量653</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--限时秒杀-->
+    <div class="xbody">
+        <div class="container">
+            <img src="./img/xsms.png" class="img-responsive center-block">
+        </div>
+        <!--倒计时+倒计时后内容-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="xsms1-body">
+                        <div style="padding-top: 20px;">距离6月10日秒杀</div>
+                        <h1>限时秒杀</h1>
+                        <div class="countdouwn">
+                            <span id="day" style="color: #fff;float: left; padding-left: 22px;">NA</span>
+                            <span id="hour"style="color: #fff;float: left; padding-left: 30px;">NA</span>
+                            <span id="minute"style="color: #fff;float: left; padding-left: 32px;">NA</span>
+                            <span id="second"style="color: #fff;float: right; padding-right: 22px;">NA</span>
+                        </div>
+                        </div>
+                    </div>
+                
+                <div class="col-xs-10">
+                    <div class="xsms-main">
+                        <div class="box">
+                            <div class="smallbox">
+                                <a href="./pages/pt.html"><img src="./img/big7.png" width="185px" height="135px">
+                                    <h4>云南夏黑葡萄4斤</h4>
+                                    <p class="price">$34</p>
+                                </a>
+                            </div>
+                            <div class="smallbox">
+                                <a href="#"><img src="./img/big3.png" width="185px" height="135px">
+                                    <h4>金果奇异果 黄心猕猴桃 12个装 </h4>
+                                    <p class="price">$29.9</p>
+                                </a>
+
+                            </div>
+                            <div class="smallbox">
+                                <a href="#"><img src="./img/big9.png" width="185px" height="135px">
+                                    <h4>福建漳州杨桃带箱5斤</h4>
+                                    <p class="price">$35.8</p>
+                                </a>
+                            </div>
+                            <div class="smallbox">
+                                <a href="#"><img src="./img/big5.png" width="185px" height="135px">
+                                    <h4>安岳黄柠檬4颗 一级中果 单果约90-110g</h4>
+                                    <p class="price">$19.9</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--秒杀内容-->
+        <div class="container">
+            <div class="sp">
+                <h1 style="color: #fff;">冷冻饮品</h1>
+                <button type="button" class="btn btn-ly btn-sm"> 酸奶 </button>
+                <button type="button" class="btn btn-ly btn-sm"> 蛋糕 </button>
+                <div><button type="button" class="btn btn-ly btn-sm "> 冰淇淋 </button></div>
+                <button type="button" class="btn btn-xy btn-lg"><a href="https://search.jd.com/Search?keyword=%E5%86%B7%E5%86%BB%E9%A3%9F%E5%93%81&enc=utf-8&wq=%E5%86%B7%E5%86%BB&pvid=5bd49baa51274144941adced1758b2ae" style="color:#fff; text-decoration:none">更多冷冻食品 ></a></button>
+            </div>
+            <div class="ssp" style="float: right; " >
+                <h1 style="color: #fff;">时令水果</h1>
+                <div class="sssp">
+                <button type="button" class="btn btn-ly btn-sm"> 苹果 </button>
+                <button type="button" class="btn btn-ly btn-sm"> 哈密瓜 </button>
+                <div><button type="button" class="btn btn-ly btn-sm "> 西瓜 </button></div>
+                <button type="button" class="btn btn-xy btn-lg"><a href="https://search.jd.com/Search?keyword=%E6%B0%B4%E6%9E%9C&enc=utf-8&wq=&pvid=04e3cb11046d416dbb4d9c2423073d1a"style="color:#fff; text-decoration:none">更多当季水果 ></a></button>
+            </div>
+            </div>
+            <a href="#"style="float: left;"><img src="./img/sp1.png" alt="食力抢先趴" class="img-responsive" height="250px"width="480px" ></a>
+            <a href="#" ><img src="./img/sp2.png" alt="时令果蔬" class="img-responsive" width="480px" height="250px"style="float: right;"></a>
+        </div>
+        <!--悬浮商品-->
+        <div class="container">
+            <div class="boxs">
+                <div class="smallb" >
+                    <a href="./pages/llbz.html"><img src="./img/ll.png" width="190px" height="185px">
+                            <p class="conten">榴芒一刻 粽子水晶粽 榴莲冰粽冰淇淋猫山王金枕</p>
+                            <p class="price">$148</p>
+                    </a>
+                </div>
+                <div class="smallb">
+                    <a href="./pages/ll.html"><img src="./img/mgqc.png" width="190px" height="185px">
+                            <p class="conten">幸福西饼 浓郁新鲜芒果纯动物奶油千层下午茶 榴芒双拼千层</p>
+                            <p class="price">$109</p>
+                    </a>
+                </div>
+                <div class="smallb">
+                    <a href="./pages/pt.html"><img src="./img/mt.png" width="190px" height="185px">
+                            <p class="conten">彩蔬卡通馒头儿童营养早餐办成速冻多口味无添加色素防腐剂680克</p>
+                            <p class="price">$129</p>
+                    </a>
+                </div>
+                <div class="smallb">
+                    <a href="./pages/apple.html"><img src="./img/apple.png" width="190px" height="185px">
+                            <p class="conten">烟台红富士苹果 净重5kg 一级铂金大果礼盒 单果220g以上</p>
+                            <p class="price">$119.9</p>
+                    </a>
+                </div>
+                <div class="smallb">
+                    <a href="./pages/xg.html"><img src="./img/xg.png" width="190px" height="185px">
+                            <p class="conten">【真实果肉】鲜果鲜语水果冰淇淋雪糕网红冷饮冰激凌冰糕棍乐飞利</p>
+                            <p class="price">$175</p>
+                    </a>
+                </div>
+                <div class="smallb">
+                    <a href="./pages/xg.html"><img src="./img/hlg.png" width="190px" height="185px">
+                            <p class="conten">红心火龙果 当季新鲜孕妇水果，整箱5斤火龙果 5斤精选大果</p>
+                            <p class="price">$78.8</p>
+                    </a>
+                </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <!--页尾部分-->
+    <footer>
+        <div class="buttom">
+            <div class="tagline">
+                <p>我们的宗旨 :</p>
+                <h3>我们不生产水果，我们只做水果的搬运工</h3>
+            </div>
+        </div>
+        <div class="message">
+            <div class="bt-left fl">
+                <li>联系地址：河南省平顶山市平顶山工业职业技术学院</li>
+                <li>传真号码：371-000000</li>
+                <li>联系电话：400-000-0000</li>
+                <li>联系邮箱：188827777@163.com</li>
+                <li>在线客服：0371-666666</li>
+                <p>Copyright 2022 , 卓不凡 ,NHGSnet3 All Rights Reserved</p>
+            </div>
+            <div class="bt-right fr">
+                <span>
+                    <img src="./img/wx1.png" width="100px" height="100px" />
+                    <p>扫码领百元红包</p>
+                </span>
+                <span>
+                    <img src="./img/wx2.png" width="100px" height="100px" />
+                    <p>关注有惊喜</p>
+                </span>
+                <span>
+                    <img src="img/wx3.png" width="100px" height="100px" />
+                    <p>下载APP，赢现金</p>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+
+</html>

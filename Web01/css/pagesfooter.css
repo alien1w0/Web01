@@ -1,0 +1,108 @@
+footer {
+    margin: button auto;
+    background: #333333;
+    width: 100%;
+    color: #ccc;
+}
+
+footer .buttom {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+footer .buttom .tagline {
+    padding: 50px 0 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer .buttom .tagline p {
+    font-size: 14px;
+}
+
+footer .buttom .tagline p:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/tu3.png) no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer .buttom .tagline h3 {
+    margin: 20px 0;
+    color: #FEBA10;
+    font-weight: lighter;
+}
+
+footer .message {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer .message .bt-left {
+    width: 790px;
+    margin: 40px 0;
+    color: #ccc;
+    float: left;
+}
+
+footer .message .bt-left li {
+    display: inline-block;
+    width: 380px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .message .bt-left li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+footer .message .bt-left li:nth-of-type(1):before {
+    background: url(../img/tu4.png) no-repeat;
+}
+
+footer .message .bt-left li:nth-of-type(2):before {
+    background: url(../img/tu5.png) no-repeat;
+}
+
+footer .message .bt-left li:nth-of-type(3):before {
+    background: url(../img/tu6.png) no-repeat;
+}
+
+footer .message .bt-left li:nth-of-type(4):before {
+    background: url(../img/tu2.png) no-repeat;
+}
+
+footer .message .bt-left li:nth-of-type(5):before {
+    background: url(../img/tu7.png) no-repeat;
+}
+
+footer .message .bt-left p {
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+footer .message .bt-right {
+    width: 400px;
+    margin: 40px 0;
+    font-size: 12px;
+    float: right;
+}
+
+footer .message .bt-right span {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+}
+
+footer .message .bt-right span p {
+    padding-top: 5px;
+}
